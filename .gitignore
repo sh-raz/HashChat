@@ -1,0 +1,111 @@
+
+
+**/*.xcuserstate
+
+HashChat.xcworkspace/xcuserdata/share.xcuserdatad/UserInterfaceState.xcuserstate
+
+
+
+
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+
+# Xcode - Schemes & Workspaces
+# (Keep shared schemes, ignore user-specific)
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+# (Keep Package.resolved for apps/libs)
+#!Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accio
+Dependencies/
+.accio/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Code Coverage
+*.xccovreport
+*.xccovarchive
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives / Symbols / Crashes
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.crash
+
+# Provisioning / Keys (never commit)
+*.mobileprovision
+*.provisionprofile
+*.p8
+*.pem
+*.key
+*.keystore
+*.jks
+
+# Firebase / Secrets (optional – recommended)
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+Config/Secrets.xcconfig
+
+# Misc editors
+.idea/
+.vscode/
+
+
+**/*.xcuserstate
+
+HashChat.xcworkspace/xcuserdata/share.xcuserdatad/UserInterfaceState.xcuserstate
+
+
+
+# Firebase / secrets
+GoogleService-Info*.plist
+FirebaseConfig.plist
+Config/GoogleService-Info.plist
+
+# Xcode user files
+*.xcuserdatad/
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+
+# Xcode user files
+*.xcuserdatad/
+xcuserdata/

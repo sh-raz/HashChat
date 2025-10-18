@@ -17,7 +17,49 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let navigationController = window?.rootViewController as? UINavigationController {
+            if #available(iOS 13.0, *) {
+                let appearance = UINavigationBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                appearance.backgroundColor = UIColor(named: "yellow")
+                navigationController.navigationBar.standardAppearance = appearance
+                navigationController.navigationBar.scrollEdgeAppearance = appearance
+                navigationController.navigationBar.tintColor = UIColor(named: "DarkGray")
+
+            } else {
+                navigationController.navigationBar.isTranslucent = false
+                navigationController.navigationBar.tintColor = UIColor(named: "DarkGray")
+
+            }
+
+        }
+
+                    
+        
+       
     }
+    
+    
+//    
+//    func adjustNavigationBarAppearance(){
+//        if let navigationController = window?.rootViewController as? UINavigationController {
+//            if #available(iOS 13.0, *) {
+//                let appearance = UINavigationBarAppearance()
+//                appearance.configureWithOpaqueBackground()
+//                appearance.backgroundColor = UIColor(named: "yellow") // Set your preferred color here
+//                
+//                navigationController.navigationBar.standardAppearance = appearance
+//                navigationController.navigationBar.scrollEdgeAppearance = appearance
+//                navigationController.navigationBar.barTintColor = UIColor(named: "DarkGray")
+//            } else {
+//                navigationController.navigationBar.barTintColor = UIColor(named: "yellow")
+//                navigationController.navigationBar.isTranslucent = false
+//            }
+//       }
+//    }
+    
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
